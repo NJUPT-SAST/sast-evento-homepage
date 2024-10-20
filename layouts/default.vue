@@ -18,7 +18,7 @@
       <NuxtLink to="/"><img src="/img/logo.png" alt="evento-logo" class="h-7" /></NuxtLink>
       <div class="flex gap-7 justify-end items-center">
         <NuxtLink
-          to="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=f30lfece-0fc4-4b11-9d54-c90f27042e15">
+          to="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=0cfk8692-9c66-48e2-8ea2-6d31ddadde82">
           Support
         </NuxtLink>
         <NuxtLink to="https://github.com/search?q=org%3ANJUPT-SAST+evento&type=repositories">
