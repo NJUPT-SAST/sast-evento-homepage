@@ -44,10 +44,9 @@ const releaseUrls = ref({
 });
 
 const fetchReleases = async () => {
-  const response = await fetch('https://api.github.com/repos/NJUPT-SAST/sast-evento/releases');
+  const response = await fetch('https://api.github.com/repos/NJUPT-SAST/sast-evento/releases/latest');
 
-  const releases = await response.json();
-  const latestRelease = releases[0];
+  const latestRelease = await response.json();
 
   latestRelease.assets.forEach((asset) => {
     if (asset.name.includes('win')) {
