@@ -3,31 +3,31 @@
     <div class="flex flex-wrap justify-center">
       <NuxtLink :to="releaseUrls.windows">
         <button>
-          <img src="~/assets/icons/windows-11.svg" alt="Windows">
+          <img :src="windows" alt="Windows">
           <span>Windows</span>
         </button>
       </NuxtLink>
       <NuxtLink :to="releaseUrls.macos">
         <button>
-          <img src="~/assets/icons/mac-logo.svg" alt="MacOS">
+          <img :src="macOS" alt="MacOS">
           <span>macOS</span>
         </button>
       </NuxtLink>
       <NuxtLink to='https://github.com/NJUPT-SAST/sast-evento/releases/latest'>
         <button>
-          <img src="~/assets/icons/linux-96.png" alt="Linux">
+          <img :src="linux" alt="Linux">
           <span>Linux</span>
         </button>
       </NuxtLink>
       <NuxtLink to="https://github.com/NJUPT-SAST/sast-evento-mobile/releases/download/1.0.0-beta/SAST-EVENTO.apk">
         <button>
-          <img src="~/assets/icons/android-os.svg">
+          <img :src="android">
           <span>Android</span>
         </button>
       </NuxtLink>
       <NuxtLink to="/ios">
         <button>
-          <img src="~/assets/icons/ios-logo.svg" class="!h-9 !w-9">
+          <img :src="ios" class="!h-9 !w-9">
           <span>iOS</span>
         </button>
       </NuxtLink>
@@ -37,6 +37,11 @@
 
 <script lang="js" setup>
 import { ref, onMounted } from 'vue';
+import windows from "~/assets/icons/windows-11.svg";
+import macOS from "~/assets/icons/mac-logo.svg";
+import linux from "~/assets/icons/linux-96.png";
+import android from "~/assets/icons/android-os.svg";
+import ios from "~/assets/icons/ios-logo.svg";
 
 const releaseUrls = ref({
   windows: 'https://github.com/NJUPT-SAST/sast-evento/releases/latest',

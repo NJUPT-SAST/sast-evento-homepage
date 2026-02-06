@@ -1,3 +1,6 @@
+<script setup>
+import githubMark from "~/assets/icons/github-mark.svg"
+</script>
 <template>
   <div class="h-screen">
     <div class="fixed inset-0 z-[-10] overflow-hidden bg-gray-300 opacity-40">
@@ -22,7 +25,7 @@
           Support
         </NuxtLink>
         <NuxtLink to="https://github.com/search?q=org%3ANJUPT-SAST+evento&type=repositories">
-          <img src="~/assets/icons/github-mark.svg" alt="Logo" class="h-7" />
+          <img :src="githubMark" alt="Logo" class="h-7" />
         </NuxtLink>
       </div>
     </AppHeader>
